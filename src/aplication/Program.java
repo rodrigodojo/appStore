@@ -1,10 +1,8 @@
 package aplication;
 
-import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.*;
 
 import entities.Department;
 import entities.HourContract;
@@ -37,7 +35,7 @@ public class Program {
 		for(int i=1 ; i<=n ; i++) {
 			System.out.println("Enter contract #" + i + "data: ");
 			System.out.print("Date (DD/MM/YYYY): ");
-			Date contractDate = (Date) sdf.parse(sc.next());
+			Date contractDate = sdf.parse(sc.next());
 			System.out.print("Value per hour: ");
 			double valuePerHour = sc.nextDouble();
 			System.out.print("Duration (hours): ");
